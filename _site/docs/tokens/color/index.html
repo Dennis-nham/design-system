@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="color-tokens">Color tokens</h1>
+
+<h2 id="nguyên-tắc">Nguyên tắc</h2>
+
+<ul>
+  <li>Dùng vai trò semantic: <code class="language-plaintext highlighter-rouge">text.primary</code>, <code class="language-plaintext highlighter-rouge">text.muted</code>, <code class="language-plaintext highlighter-rouge">surface.canvas</code>, <code class="language-plaintext highlighter-rouge">surface.raised</code>, <code class="language-plaintext highlighter-rouge">border.default</code>, <code class="language-plaintext highlighter-rouge">action.primary</code>, <code class="language-plaintext highlighter-rouge">status.error</code>.</li>
+  <li>Tách trạng thái interactive (hover, active, focus, disabled) khỏi màu thương hiệu.</li>
+  <li>Light/dark theme ánh xạ semantic token sang giá trị cụ thể; không để component tự định nghĩa palette riêng.</li>
+  <li>Trạng thái không chỉ dựa vào màu; kiểm tra contrast theo tiêu chuẩn accessibility đã chọn.</li>
+</ul>
+
+<h2 id="bộ-màu-tham-chiếu-ban-đầu">Bộ màu tham chiếu ban đầu</h2>
+
+<p>Các giá trị dưới đây gợi tinh thần màu hệ thống iOS 16, chỉ là điểm xuất phát độc lập cho theme NPMIS, không phải bảng màu chính thức của Apple. Hãy kiểm tra contrast và điều chỉnh theo brand trước khi ổn định token.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Token semantic</th>
+      <th>Giá trị tham chiếu</th>
+      <th>Dùng cho</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">color.action.primary</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#007AFF</code></td>
+      <td>Hành động và liên kết chính</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">color.status.success</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#248A3D</code></td>
+      <td>Trạng thái thành công</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">color.status.warning</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#9A6700</code></td>
+      <td>Cảnh báo cần chú ý</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">color.status.error</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#D70015</code></td>
+      <td>Lỗi và hành động nguy hiểm</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">color.surface.grouped</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#F2F2F7</code></td>
+      <td>Nền khu vực nhóm nội dung</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">color.surface.primary</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#FFFFFF</code></td>
+      <td>Bề mặt nội dung</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">color.text.primary</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#1C1C1E</code></td>
+      <td>Văn bản chính</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">color.text.secondary</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#636366</code></td>
+      <td>Văn bản phụ</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dark theme phải ánh xạ lại semantic tokens theo nền tối; không đảo màu cơ học. Cần kiểm chứng mọi cặp foreground/background, including trạng thái disabled và focus.</p>
+
+<h2 id="mở-rộng">Mở rộng</h2>
+
+<p>Hỗ trợ theme qua CSS custom properties và cơ chế override theo phạm vi. Tránh đặt tên token gắn với màu sắc thị giác khi màu có thể đổi theo brand. Chưa chốt palette thương hiệu; mọi màu minh họa cần được đánh dấu là provisional.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

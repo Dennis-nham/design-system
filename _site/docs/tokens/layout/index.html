@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="spacing-radius-và-elevation">Spacing, radius và elevation</h1>
+
+<h2 id="spacing">Spacing</h2>
+
+<p>Chọn scale có bước nhất quán và đặt tên theo vai trò/giá trị ổn định (<code class="language-plaintext highlighter-rouge">space.1</code>, <code class="language-plaintext highlighter-rouge">space.2</code>…) sau khi đo kiểm component. Không để component tự tạo giá trị lệch nhỏ tùy tiện.</p>
+
+<h2 id="radius">Radius</h2>
+
+<p>Định nghĩa một số mức có ngữ nghĩa: control, surface, overlay. Radius không thay thế hierarchy hoặc focus.</p>
+
+<h2 id="elevation">Elevation</h2>
+
+<p>Elevation chỉ thể hiện quan hệ lớp khi cần. Duy trì khả năng nhìn thấy border trong theme tương phản thấp; không dùng shadow như chỉ dấu duy nhất.</p>
+
+<p>Các token cần thử ở zoom 200%, giao diện dày đặc và màn hình nhỏ trước khi ổn định API.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

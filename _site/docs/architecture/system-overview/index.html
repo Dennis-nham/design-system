@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="tổng-quan-kiến-trúc">Tổng quan kiến trúc</h1>
+
+<pre><code class="language-mermaid">flowchart LR
+  Tokens[Design tokens] --&gt; Core[UI packages]
+  Core --&gt; Docs[Docs and examples]
+  Core --&gt; Apps[Consumer applications]
+  Tokens --&gt; Docs
+  CI[Quality checks] --&gt; Core
+  CI --&gt; Docs
+  Release[Versioned release] --&gt; NPM[npm registry]
+  Core --&gt; Release
+</code></pre>
+
+<h2 id="ranh-giới">Ranh giới</h2>
+
+<ul>
+  <li><strong>Tokens:</strong> giá trị thiết kế có tên ngữ nghĩa; không phụ thuộc nghiệp vụ.</li>
+  <li><strong>Core UI:</strong> components, hooks/utilities nếu cần, types và styles công khai.</li>
+  <li><strong>Docs/demo:</strong> hướng dẫn và ví dụ; không trở thành dependency runtime của người dùng.</li>
+  <li><strong>Apps:</strong> sản phẩm tiêu thụ package và sở hữu logic nghiệp vụ.</li>
+  <li><strong>Release pipeline:</strong> build artifact, kiểm tra metadata, provenance và công bố theo quyền tối thiểu.</li>
+</ul>
+
+<h2 id="nguyên-tắc-phụ-thuộc">Nguyên tắc phụ thuộc</h2>
+
+<p>Ứng dụng phụ thuộc package; package không phụ thuộc ứng dụng demo. Tránh circular dependencies và export nội bộ ngoài public entry points. Trước khi chốt monorepo, so sánh chi phí workspace tooling với số package thực tế; không chọn công cụ chỉ vì dự kiến có nhiều package.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="calendar-date-picker-và-time-picker">Calendar, date picker và time picker</h1>
+
+<h2 id="phạm-vi">Phạm vi</h2>
+
+<p>Phân biệt ngày dân sự, thời điểm tuyệt đối và giờ địa phương. API không được tự chuyển timezone ngầm. Giá trị lưu trữ, locale, calendar system, timezone và quy tắc tuần đầu tiên phải được xác định rõ.</p>
+
+<h2 id="date-picker--calendar">Date picker / calendar</h2>
+
+<ul>
+  <li>Có thể nhập ngày trực tiếp; picker là phương thức bổ sung chứ không phải lối duy nhất.</li>
+  <li>Dùng lưới ngày có tên ngày/tháng truy cập được, điều hướng bằng bàn phím và công bố ngày đang chọn.</li>
+  <li>Hỗ trợ min/max, ngày không khả dụng, locale và lựa chọn khoảng ngày nếu use case yêu cầu.</li>
+  <li>Khi mở, focus có điểm đến hợp lý; đóng bằng Escape; focus quay về trigger.</li>
+</ul>
+
+<h2 id="time-picker">Time picker</h2>
+
+<p>Chốt 12/24 giờ theo locale, step phút, nhập bàn phím, giá trị không hợp lệ và xử lý ngày chuyển giờ daylight-saving. Không đoán timezone hệ thống thay cho caller.</p>
+
+<h2 id="điều-kiện-phát-hành">Điều kiện phát hành</h2>
+
+<p>Chọn thư viện date/time chuyên dụng đã được duy trì hoặc chứng minh đầy đủ tính đúng đắn trước khi tự triển khai logic lịch. Test locale, năm nhuận, DST, biên min/max và bàn phím.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

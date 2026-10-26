@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="chiến-lược-packages">Chiến lược packages</h1>
+
+<h2 id="cấu-trúc-gợi-ý">Cấu trúc gợi ý</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">@npmis/tokens</code>: token nguồn, CSS variables và định dạng build.</li>
+  <li><code class="language-plaintext highlighter-rouge">@npmis/ui</code>: component web và styles (tên minh họa, cần kiểm tra namespace npm).</li>
+  <li><code class="language-plaintext highlighter-rouge">@npmis/icons</code>: chỉ tách khi nguồn icon, license và nhu cầu tree-shaking đã rõ.</li>
+  <li><code class="language-plaintext highlighter-rouge">@npmis/docs</code>: ứng dụng tài liệu; không nhất thiết phát hành lên npm.</li>
+</ul>
+
+<p>Bắt đầu bằng ít package nhất có thể. Nếu một package UI và tokens đủ, không tách package để tạo cấu trúc hình thức.</p>
+
+<h2 id="hợp-đồng-package">Hợp đồng package</h2>
+
+<ul>
+  <li>Chỉ public API trong entry point được công bố; giữ internal paths riêng.</li>
+  <li>Khai báo rõ <code class="language-plaintext highlighter-rouge">exports</code>, <code class="language-plaintext highlighter-rouge">types</code>, module format, CSS entry và peer dependencies.</li>
+  <li>Không yêu cầu người dùng cài dependency build-time không cần thiết.</li>
+  <li>Kiểm thử package đã đóng gói bằng consumer fixture trước publish.</li>
+  <li>Đặt tên scope sau khi xác nhận quyền sở hữu tổ chức npm và tránh xung đột tên.</li>
+</ul>
+
+<h2 id="chính-sách-tương-thích">Chính sách tương thích</h2>
+
+<p>SemVer chỉ áp dụng khi API công khai được định nghĩa. Deprecation cần thông báo, thay thế, thời hạn tối thiểu và hướng dẫn migration.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

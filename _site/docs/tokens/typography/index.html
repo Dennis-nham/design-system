@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="typography-tokens">Typography tokens</h1>
+
+<p>Định nghĩa roles như <code class="language-plaintext highlighter-rouge">font.family.body</code>, <code class="language-plaintext highlighter-rouge">font.family.heading</code>, <code class="language-plaintext highlighter-rouge">font.size.body</code>, <code class="language-plaintext highlighter-rouge">font.size.label</code>, <code class="language-plaintext highlighter-rouge">font.size.heading.*</code>, <code class="language-plaintext highlighter-rouge">font.weight.*</code> và <code class="language-plaintext highlighter-rouge">line.height.*</code>. Các giá trị cuối cần được kiểm thử với tiếng Việt có dấu, nội dung dài và font fallback.</p>
+
+<h2 id="tham-chiếu-giao-diện">Tham chiếu giao diện</h2>
+
+<p>Ưu tiên kiểu chữ system-native để giao diện hòa nhập môi trường mà không đóng gói font độc quyền: <code class="language-plaintext highlighter-rouge">-apple-system</code>, <code class="language-plaintext highlighter-rouge">BlinkMacSystemFont</code>, <code class="language-plaintext highlighter-rouge">"Segoe UI"</code>, sans-serif. Dùng scale phân cấp rõ ràng, tiêu đề đậm vừa phải, body thoáng và label ngắn; không dùng chữ siêu nhỏ để nhồi thông tin. Đây là lựa chọn tương thích đa nền tảng, không phải yêu cầu dùng font Apple.</p>
+
+<p>Font bên thứ ba phải có license phù hợp, nguồn và phương án fallback. Không dùng kích thước phụ thuộc viewport cho mọi cấp chữ; ưu tiên scale có chủ đích và giới hạn reflow. Chốt font family sau khi kiểm tra tải, coverage glyph, hiệu năng và quyền phân phối.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

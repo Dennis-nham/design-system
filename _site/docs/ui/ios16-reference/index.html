@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="tham-chiếu-ui-ios-16">Tham chiếu UI iOS 16</h1>
+
+<p>Tài liệu này chuyển hóa một số nguyên tắc giao diện quen thuộc của iOS 16 thành hướng dẫn độc lập cho NPMIS. Đây là tham chiếu về hierarchy, surfaces và interaction; không sao chép screen, icon độc quyền, asset, tên thương hiệu hay chi tiết nhận diện của Apple.</p>
+
+<h2 id="ngôn-ngữ-thị-giác">Ngôn ngữ thị giác</h2>
+
+<ul>
+  <li>Nền grouped neutral tạo phân lớp; nội dung đặt trên surface sáng, đường phân cách mảnh và có tương phản đủ.</li>
+  <li>Dùng màu accent xanh cho action/link chính; success, warning và error có semantic roles riêng.</li>
+  <li>Ưu tiên typography system-native, hierarchy gọn, body dễ đọc và label nhất quán.</li>
+  <li>Control có kích thước ổn định, hit target thoải mái, trạng thái pressed/focus/disabled rõ ràng.</li>
+  <li>Thanh điều hướng có thể dùng chất liệu bán trong suốt khi nội dung cuộn phía sau không làm giảm khả năng đọc; luôn có fallback opaque.</li>
+  <li>Bo góc có cấp độ: control và row nhỏ gọn, surface lớn hơn vừa phải; tránh lạm dụng card lồng card.</li>
+</ul>
+
+<h2 id="quy-đổi-sang-design-tokens">Quy đổi sang design tokens</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nhóm</th>
+      <th>Hướng dẫn NPMIS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Color</td>
+      <td>Dùng semantic tokens; có light/dark mappings và kiểm tra contrast</td>
+    </tr>
+    <tr>
+      <td>Typography</td>
+      <td>System font stack, scale ổn định, hỗ trợ tiếng Việt và zoom</td>
+    </tr>
+    <tr>
+      <td>Surface</td>
+      <td>Grouped background, primary surface, separator và material riêng</td>
+    </tr>
+    <tr>
+      <td>Shape</td>
+      <td>Radius theo cấp component, không tạo hình pill cho mọi control</td>
+    </tr>
+    <tr>
+      <td>Motion</td>
+      <td>Chuyển cảnh ngắn, có reduced-motion alternative</td>
+    </tr>
+    <tr>
+      <td>Icon</td>
+      <td>Dùng icon set có license rõ; icon-only control phải có accessible name</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="áp-dụng-vào-patterns">Áp dụng vào patterns</h2>
+
+<ul>
+  <li><strong>Buttons và controls:</strong> phân cấp bằng style và vị trí; không phụ thuộc màu đơn lẻ; giữ trạng thái focus nhìn thấy.</li>
+  <li><strong>Forms:</strong> label luôn hiện, hỗ trợ autofill, helper/error text có liên kết ngữ nghĩa; không dùng placeholder làm label.</li>
+  <li><strong>Navigation:</strong> cấu trúc rõ, active item có trạng thái văn bản/semantics; trên web giữ link native và điều hướng bàn phím.</li>
+  <li><strong>Calendar/date/time:</strong> cung cấp nhập liệu trực tiếp, locale/timezone rõ và điều khiển bằng bàn phím; không giả định lịch iOS là chuẩn của mọi vùng.</li>
+  <li><strong>Tooltip/toast:</strong> nội dung ngắn, có thể tiếp cận, không che controls; lỗi quan trọng không tự biến mất quá nhanh.</li>
+  <li><strong>Avatar/profile/media:</strong> giữ crop và kích thước ổn định, fallback có ngữ nghĩa, không dùng ảnh trang trí thay thông tin cần thiết.</li>
+</ul>
+
+<h2 id="khác-biệt-giữa-ios-và-web">Khác biệt giữa iOS và web</h2>
+
+<p>Không mang nguyên xi gesture-only behavior, tab bar mobile hoặc navigation stack của ứng dụng native sang web. Web cần URL có thể chia sẻ, semantics HTML, hover/focus, keyboard, responsive layout và browser history. Haptic feedback, system sheet và native picker chỉ dùng khi nền tảng hỗ trợ và luôn có phương án thay thế.</p>
+
+<h2 id="tiêu-chí-review">Tiêu chí review</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Hierarchy vẫn rõ khi bỏ màu accent.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Theme sáng/tối và contrast được kiểm tra.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Dùng được bằng bàn phím, touch và screen reader.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Layout hoạt động trên viewport hẹp, zoom và nội dung tiếng Việt dài.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Không dùng asset hoặc font có quyền phân phối chưa rõ.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mọi hiệu ứng blur/transparency có fallback dễ đọc.</li>
+</ul>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

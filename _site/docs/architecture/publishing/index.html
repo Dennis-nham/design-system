@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="đóng-gói-và-phát-hành-npmgithub">Đóng gói và phát hành npm/GitHub</h1>
+
+<h2 id="trước-khi-công-bố">Trước khi công bố</h2>
+
+<ul>
+  <li>Chốt license, package scope, quyền publish và danh sách maintainer.</li>
+  <li>Kiểm tra build output, <code class="language-plaintext highlighter-rouge">exports</code>, typings, CSS, files được đóng gói và peer dependencies.</li>
+  <li>Chạy test trên artifact đóng gói trong consumer fixture; không chỉ test workspace source.</li>
+  <li>Tạo changelog, tag tương ứng và ghi rõ breaking changes.</li>
+  <li>Dùng GitHub Actions với quyền tối thiểu, bảo vệ branch và môi trường publish có approval phù hợp.</li>
+</ul>
+
+<h2 id="quy-trình-phát-hành-dự-kiến">Quy trình phát hành dự kiến</h2>
+
+<p>Pull request được kiểm tra tự động; maintainer review; merge vào nhánh chính; tạo release/tag; CI build và kiểm thử; publish bằng trusted publishing/provenance nếu registry và cấu hình hỗ trợ; xác minh package trên npm sau publish.</p>
+
+<p>Không lưu npm token dài hạn trong repo. Bật 2FA và quản lý quyền publish theo tổ chức. Pin action theo SHA khi yêu cầu bảo mật của dự án đã được chốt.</p>
+
+<h2 id="phiên-bản">Phiên bản</h2>
+
+<p>Trước v1, có thể dùng prerelease (<code class="language-plaintext highlighter-rouge">0.x</code> hoặc tag <code class="language-plaintext highlighter-rouge">next</code>) để nhận phản hồi, nhưng phải công bố mức ổn định. Không tự động phát hành từ mọi commit nếu chưa có quy trình rollback và người chịu trách nhiệm.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

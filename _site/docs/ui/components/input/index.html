@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="input-và-text-fields">Input và text fields</h1>
+
+<h2 id="cấu-trúc">Cấu trúc</h2>
+
+<p>Text field gồm label hiển thị, control, mô tả tùy chọn và thông báo lỗi gắn với control. Placeholder không thay thế label. Hỗ trợ <code class="language-plaintext highlighter-rouge">id</code>, <code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">type</code>, <code class="language-plaintext highlighter-rouge">value/defaultValue</code>, <code class="language-plaintext highlighter-rouge">disabled</code>, <code class="language-plaintext highlighter-rouge">readOnly</code>, <code class="language-plaintext highlighter-rouge">required</code>, <code class="language-plaintext highlighter-rouge">aria-describedby</code> và error state theo quy ước framework đã chọn.</p>
+
+<h2 id="hành-vi">Hành vi</h2>
+
+<ul>
+  <li>Không xóa nội dung người dùng khi validation thất bại.</li>
+  <li>Lỗi chỉ xuất hiện theo thời điểm hợp lý; văn bản nêu cách sửa, không chỉ đổi viền đỏ.</li>
+  <li>Hỗ trợ autocomplete, input mode và autofill native khi phù hợp.</li>
+  <li>Textarea và input số/ngày cần API chuyên biệt nếu native semantics khác nhau.</li>
+  <li>Kích thước target, focus ring và trạng thái disabled/read-only nhất quán.</li>
+</ul>
+
+<h2 id="kiểm-thử">Kiểm thử</h2>
+
+<p>Label click/focus, required, help/error association, keyboard, autofill, giá trị dài, RTL và trình đọc màn hình.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>Design tokens · NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="design-tokens">Design tokens</h1>
+
+<p>Tokens là hợp đồng đặt tên cho giá trị thiết kế. Ưu tiên tên theo vai trò (<code class="language-plaintext highlighter-rouge">color.text.primary</code>) thay vì tên theo sắc độ (<code class="language-plaintext highlighter-rouge">blue.700</code>) trong API sử dụng. Alias primitive có thể được giữ ở lớp nguồn.</p>
+
+<p>Hướng dẫn thị giác tham chiếu iOS 16 và cách quy đổi sang web nằm trong <a href="/design-system/docs/ui/ios16-reference/">tài liệu UI iOS 16</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Đặc tả</th>
+      <th>Nội dung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/design-system/docs/tokens/color/">Color</a></td>
+      <td>Semantic palette và theme</td>
+    </tr>
+    <tr>
+      <td><a href="/design-system/docs/tokens/typography/">Typography</a></td>
+      <td>Font roles, scale và line-height</td>
+    </tr>
+    <tr>
+      <td><a href="/design-system/docs/tokens/layout/">Spacing, radius, elevation</a></td>
+      <td>Nhịp layout và bề mặt</td>
+    </tr>
+    <tr>
+      <td><a href="/design-system/docs/tokens/motion/">Motion</a></td>
+      <td>Timing, easing và reduced motion</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Định dạng nguồn và cơ chế build cần được chọn bằng ADR. Mỗi token public cần mô tả ý nghĩa, theme, ví dụ và chính sách deprecation.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

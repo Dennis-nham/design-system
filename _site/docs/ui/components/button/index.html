@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="button">Button</h1>
+
+<h2 id="mục-đích-và-api">Mục đích và API</h2>
+
+<p>Dùng cho hành động rõ ràng. Mặc định là button HTML; điều hướng dùng link. Các thuộc tính dự kiến: <code class="language-plaintext highlighter-rouge">variant</code> (primary, secondary, outline, ghost, danger), <code class="language-plaintext highlighter-rouge">size</code>, <code class="language-plaintext highlighter-rouge">disabled</code>, <code class="language-plaintext highlighter-rouge">loading</code>, <code class="language-plaintext highlighter-rouge">type</code> và nội dung/icon.</p>
+
+<h2 id="hành-vi">Hành vi</h2>
+
+<ul>
+  <li>Chỉ một primary action nổi bật trong cùng nhóm khi phân cấp thị giác cần thiết.</li>
+  <li>Loading không được làm nút đổi kích thước; thông báo trạng thái cho công nghệ hỗ trợ và ngăn submit lặp.</li>
+  <li>Icon-only cần accessible name và tooltip nếu ý nghĩa chưa phổ biến.</li>
+  <li>Disabled phải thể hiện rõ; với hành động cần giải thích lý do, cân nhắc giữ tương tác và mô tả yêu cầu thay vì chỉ disable.</li>
+  <li>Focus bằng bàn phím hiển thị; Enter/Space kích hoạt theo hành vi native.</li>
+</ul>
+
+<h2 id="kiểm-thử">Kiểm thử</h2>
+
+<p>Kiểm tra variant, loading, disabled, type submit/reset, icon-only, label dài và contrast ở mọi theme.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

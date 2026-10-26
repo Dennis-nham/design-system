@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="cover-và-thumbnail">Cover và thumbnail</h1>
+
+<h2 id="mục-đích">Mục đích</h2>
+
+<p>Hiển thị bản xem trước media có tỷ lệ khung hình và hành vi tải ổn định. Cover là vùng media lớn; thumbnail là ảnh thu nhỏ dùng trong danh sách hoặc lựa chọn.</p>
+
+<h2 id="hợp-đồng">Hợp đồng</h2>
+
+<p>Nhận URL/nguồn ảnh, alt, aspect ratio, fit, kích thước responsive và fallback. Tỷ lệ được đặt trước để tránh layout shift. <code class="language-plaintext highlighter-rouge">object-fit: cover</code> chỉ dùng khi crop chấp nhận được; cung cấp cách xem đầy đủ khi nội dung có ý nghĩa.</p>
+
+<p>Hỗ trợ loading, lỗi tải, nội dung không có ảnh, lazy loading phù hợp và giới hạn kích thước nguồn. Không nhúng ảnh ngoài không tin cậy mặc định; caller chịu trách nhiệm quyền sử dụng và bảo mật URL.</p>
+
+<p>Kiểm thử ảnh vỡ, alt, crop, hình dọc/ngang, kích thước nhỏ và layout shift.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>{% if page.title and page.title != site.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="{{ '/' | relative_url }}">Tổng quan</a>
+          <a href="{{ '/docs/ui/components/README/' | relative_url }}">UI kit</a>
+          <a href="{{ '/docs/tokens/README/' | relative_url }}">Tokens</a>
+          <a href="{{ '/docs/architecture/system-overview/' | relative_url }}">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="{{ '/CONTRIBUTING/' | relative_url }}">Đóng góp</a>
+      <a href="{{ '/COPYRIGHT/' | relative_url }}">Bản quyền</a>
+    </footer>
+  </body>
+</html>

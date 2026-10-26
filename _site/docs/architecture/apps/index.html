@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="ứng-dụng-trong-hệ-sinh-thái">Ứng dụng trong hệ sinh thái</h1>
+
+<h2 id="ứng-dụng-tài-liệu">Ứng dụng tài liệu</h2>
+
+<p>Cho phép tìm kiếm component, xem variants và đọc ví dụ. Mỗi ví dụ cần cho biết trạng thái, keyboard behavior, props liên quan và giới hạn. Có thể cung cấp theme switcher để kiểm tra tokens; không gửi telemetry mặc định.</p>
+
+<h2 id="ứng-dụng-playground">Ứng dụng playground</h2>
+
+<p>Chỉ xây khi có nhu cầu thử props và chia sẻ ví dụ. Không chạy code người dùng trên server hoặc thực thi nội dung không tin cậy nếu chưa có sandbox và mô hình bảo mật.</p>
+
+<h2 id="cli-và-dịch-vụ">CLI và dịch vụ</h2>
+
+<p>CLI generator, cloud, marketplace và đồng bộ design-tool là hướng tương lai, không phải dependency của core UI. Mỗi app/dịch vụ cần owner, threat model, chính sách dữ liệu và kế hoạch vận hành riêng trước khi khởi động.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

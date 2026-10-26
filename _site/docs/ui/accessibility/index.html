@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="yêu-cầu-accessibility">Yêu cầu accessibility</h1>
+
+<h2 id="tiêu-chí-mặc-định">Tiêu chí mặc định</h2>
+
+<ul>
+  <li>Ưu tiên phần tử HTML native và semantics đúng; ARIA chỉ bổ sung khi native không đủ.</li>
+  <li>Tất cả hành động dùng được bằng bàn phím; focus nhìn thấy rõ, thứ tự focus hợp lý và không có trap ngoài dialog/modal.</li>
+  <li>Label, description, lỗi và trạng thái được liên kết programmatically.</li>
+  <li>Không truyền đạt trạng thái chỉ bằng màu; hỗ trợ zoom, reflow, reduced motion và nội dung dài.</li>
+  <li>Component tương tác có kiểm tra screen reader phù hợp và kiểm tra tương phản theo tiêu chuẩn đã chọn.</li>
+</ul>
+
+<h2 id="kiểm-tra">Kiểm tra</h2>
+
+<p>Mỗi component ghi keyboard map, accessible name/state và phương án khi nội dung không tải. Tự động hóa chỉ là một lớp; review thủ công vẫn cần thiết. Chốt mục tiêu WCAG và phiên bản tiêu chuẩn trước khi tuyên bố tuân thủ.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

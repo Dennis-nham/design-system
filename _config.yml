@@ -1,0 +1,28 @@
+title: NPMIS Design System
+description: Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.
+url: https://dennis-nham.github.io
+baseurl: /design-system
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+  - jekyll-sitemap
+
+relative_links:
+  enabled: true
+  collections: false
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+exclude:
+  - .github
+  - vendor
+  - Gemfile
+  - Gemfile.lock

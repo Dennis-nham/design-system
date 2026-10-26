@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="avatar-và-profile">Avatar và profile</h1>
+
+<h2 id="avatar">Avatar</h2>
+
+<p>Avatar hiển thị ảnh hoặc fallback chữ cái/biểu tượng. API dự kiến gồm <code class="language-plaintext highlighter-rouge">src</code>, <code class="language-plaintext highlighter-rouge">alt</code>, <code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">size</code>, <code class="language-plaintext highlighter-rouge">shape</code> và trạng thái hiện diện tùy chọn. Ảnh người dùng có alt theo ngữ cảnh; ảnh trang trí dùng alt rỗng. Không hiển thị presence chỉ bằng màu.</p>
+
+<p>Ảnh lỗi/chưa tải phải giữ kích thước ổn định và chuyển sang fallback. Không tự cắt nội dung quan trọng; hỗ trợ high-density image và tên dài.</p>
+
+<h2 id="profile-summary">Profile summary</h2>
+
+<p>Là molecule kết hợp avatar và thông tin tên/phụ đề; không hàm ý dữ liệu cá nhân hay quyền truy cập. Nếu tương tác điều hướng, dùng link có tên dễ hiểu; nếu mở menu, dùng button và công bố trạng thái.</p>
+
+<p>Kiểm thử fallback, alt, loading/error, tên dài, kích thước nhỏ và tương phản.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

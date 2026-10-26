@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="menubar-và-navbar">Menubar và navbar</h1>
+
+<h2 id="phân-biệt">Phân biệt</h2>
+
+<p>Navbar là vùng điều hướng liên kết trong trang/ứng dụng. Menubar là pattern điều khiển lệnh có tương tác bàn phím kiểu menu. Không dùng role <code class="language-plaintext highlighter-rouge">menubar</code> cho thanh link thông thường.</p>
+
+<h2 id="navbar">Navbar</h2>
+
+<p>Hỗ trợ landmark navigation có nhãn, link active với trạng thái rõ, responsive collapse và thứ tự DOM phù hợp. Nút mở menu công bố expanded state; thay đổi kích thước màn hình không làm mất focus hoặc nội dung.</p>
+
+<h2 id="menubar">Menubar</h2>
+
+<p>Chỉ dùng khi giao diện thực sự có mô hình menu lệnh. Đặc tả roving focus, phím mũi tên, Home/End, Enter/Space, Escape và hành vi submenu; hỗ trợ screen reader theo pattern được chọn.</p>
+
+<p>Kiểm thử nhiều navigation landmark, focus, mobile, zoom và menu lồng nhau. Tránh mega-menu nếu chưa có use case xác thực.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="theme-color" content="#f2f2f7">
+    <title>NPMIS Design System</title>
+    <link rel="stylesheet" href="/design-system/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NPMIS <span>Design System</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="/design-system/">Tổng quan</a>
+          <a href="/design-system/docs/ui/components/README/">UI kit</a>
+          <a href="/design-system/docs/tokens/README/">Tokens</a>
+          <a href="/design-system/docs/architecture/system-overview/">Kiến trúc</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-content">
+      <h1 id="tooltip-và-toast">Tooltip và toast</h1>
+
+<h2 id="tooltip">Tooltip</h2>
+
+<p>Tooltip bổ sung thông tin ngắn, không chứa nội dung thiết yếu hoặc controls tương tác. Kích hoạt bằng hover và focus; có thể đóng theo thiết kế bằng Escape; không che trigger và cần đủ thời gian để đọc. Icon-only control phải có accessible name độc lập.</p>
+
+<h2 id="toast">Toast</h2>
+
+<p>Toast thông báo kết quả không chặn luồng. Phân loại thông tin, thành công, cảnh báo và lỗi; nội dung ngắn, hành động tùy chọn. Dùng live region phù hợp, không thông báo dồn dập và cho phép người dùng đóng.</p>
+
+<p>Thông báo quan trọng cần tồn tại đủ lâu hoặc không tự biến mất; lỗi cần có nơi bền vững trong trang. Không chỉ dùng màu/icon để truyền đạt mức độ.</p>
+
+<p>Kiểm thử screen reader, nhiều toast, thứ tự mới nhất, pause/timeout khi focus và viewport nhỏ.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>NPMIS Design System</span>
+      <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
+      <a href="/design-system/COPYRIGHT/">Bản quyền</a>
+    </footer>
+  </body>
+</html>
