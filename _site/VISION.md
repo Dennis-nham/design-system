@@ -1,6 +1,6 @@
 # Tầm nhìn
 
-NPMIS hướng tới một nền tảng design system mở, có cấu trúc và đáng tin cậy để đội ngũ sản phẩm xây dựng giao diện nhất quán mà không phải giải quyết lại cùng một bài toán UI ở mỗi dự án.
+Dennis hướng tới một nền tảng design system mở, có cấu trúc và đáng tin cậy để đội ngũ sản phẩm xây dựng giao diện nhất quán mà không phải giải quyết lại cùng một bài toán UI ở mỗi dự án.
 
 ## Hình dung dài hạn
 

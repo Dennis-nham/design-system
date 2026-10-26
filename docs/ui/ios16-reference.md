@@ -1,6 +1,6 @@
 # Tham chiếu UI iOS 16
 
-Tài liệu này chuyển hóa một số nguyên tắc giao diện quen thuộc của iOS 16 thành hướng dẫn độc lập cho NPMIS. Đây là tham chiếu về hierarchy, surfaces và interaction; không sao chép screen, icon độc quyền, asset, tên thương hiệu hay chi tiết nhận diện của Apple.
+Tài liệu này chuyển hóa một số nguyên tắc giao diện quen thuộc của iOS 16 thành hướng dẫn độc lập cho Dennis. Đây là tham chiếu về hierarchy, surfaces và interaction; không sao chép screen, icon độc quyền, asset, tên thương hiệu hay chi tiết nhận diện của Apple.
 
 ## Ngôn ngữ thị giác
 
@@ -13,7 +13,7 @@ Tài liệu này chuyển hóa một số nguyên tắc giao diện quen thuộc
 
 ## Quy đổi sang design tokens
 
-| Nhóm | Hướng dẫn NPMIS |
+| Nhóm | Hướng dẫn Dennis |
 | --- | --- |
 | Color | Dùng semantic tokens; có light/dark mappings và kiểm tra contrast |
 | Typography | System font stack, scale ổn định, hỗ trợ tiếng Việt và zoom |

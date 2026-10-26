@@ -1,7 +1,21 @@
-# Giấy phép
+MIT License
 
-**Trạng thái: chưa chọn.** Không coi tài liệu này là văn bản cấp phép và không suy diễn rằng mã nguồn đã được cấp quyền sử dụng thương mại.
+Copyright (c) 2026 Dennis-nham
 
-Trước bản phát hành công khai đầu tiên, maintainer cần chọn một license phù hợp (ví dụ MIT hoặc Apache-2.0), thêm văn bản license đầy đủ vào repository, xác định chủ thể giữ quyền và rà soát quyền đối với đóng góp/phụ thuộc. Cần xin tư vấn pháp lý khi có nghi vấn về quyền sở hữu hoặc nghĩa vụ phân phối.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Cho tới khi quyết định được ghi nhận và license được thêm vào repo, quyền sử dụng nội dung/mã nguồn được điều chỉnh bởi pháp luật hiện hành; việc công khai repo không tự nó cấp một license open source.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

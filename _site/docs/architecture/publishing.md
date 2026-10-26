@@ -2,7 +2,7 @@
 
 ## Trước khi công bố
 
-- Chốt license, package scope, quyền publish và danh sách maintainer.
+- License MIT đã được công bố; xác nhận package scope, quyền publish và danh sách maintainer.
 - Kiểm tra build output, `exports`, typings, CSS, files được đóng gói và peer dependencies.
 - Chạy test trên artifact đóng gói trong consumer fixture; không chỉ test workspace source.
 - Tạo changelog, tag tương ứng và ghi rõ breaking changes.

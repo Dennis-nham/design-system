@@ -1,6 +1,6 @@
-# NPMIS Design System
+# Dennis Design System
 
-NPMIS là dự án hướng tới một design system và UI kit dùng chung, có thể phân phối qua npm, tích hợp vào ứng dụng web và phát triển cùng cộng đồng. Bộ tài liệu này mô tả mục tiêu, ranh giới kỹ thuật, hành vi giao diện và cách đóng góp; tài liệu không thay thế mã nguồn triển khai hay tư vấn pháp lý.
+Dennis là dự án design system và UI kit dùng chung, được Dennis-nham chia sẻ miễn phí với cộng đồng theo giấy phép MIT. Giấy phép cho phép sử dụng, sửa đổi và phân phối, kể cả cho mục đích thương mại, với điều kiện giữ thông báo bản quyền và giấy phép. Bộ tài liệu này mô tả mục tiêu, ranh giới kỹ thuật, hành vi giao diện và cách đóng góp; xem [LICENSE.md](LICENSE.md) để biết đầy đủ điều khoản.
 
 ## Bắt đầu
 
@@ -10,7 +10,7 @@ NPMIS là dự án hướng tới một design system và UI kit dùng chung, c�
 - Kỹ thuật: [Tổng quan kiến trúc](docs/architecture/system-overview.md), [Chiến lược packages](docs/architecture/package-strategy.md), [Ứng dụng](docs/architecture/apps.md), [Phát hành npm](docs/architecture/publishing.md).
 - UI: [Atomic Design](docs/ui/atomic-design.md), [Danh mục thành phần](docs/ui/components/README.md), [Tokens](docs/tokens/README.md), [Accessibility](docs/ui/accessibility.md).
 - Cộng đồng và quản trị: [Đóng góp](CONTRIBUTING.md), [RFC](docs/governance/rfc.md), [Báo lỗi](docs/community/bug-report.md), [Yêu cầu tính năng](docs/community/feature-request.md).
-- Tác giả và quyền: [Tác giả](AUTHOR.md), [Bản quyền](COPYRIGHT.md), [Giấy phép](LICENSE.md).
+- Tác giả và quyền: [Tác giả](AUTHOR.md), [Bản quyền](COPYRIGHT.md), [Giấy phép MIT](LICENSE.md).
 
 ## Trạng thái
 

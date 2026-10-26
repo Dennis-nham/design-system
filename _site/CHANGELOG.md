@@ -4,5 +4,5 @@ Các mục được ghi theo thứ tự mới nhất trước. Định dạng kh
 
 ## Chưa phát hành
 
-- Khởi tạo nền tảng tài liệu NPMIS Design System.
-- Ghi nhận các quyết định còn mở về framework, license, package và quy trình phát hành.
+- Đổi thương hiệu dự án thành Dennis Design System và phát hành tài liệu/mã nguồn theo MIT License.
+- Ghi nhận các quyết định còn mở về framework, package và quy trình phát hành.

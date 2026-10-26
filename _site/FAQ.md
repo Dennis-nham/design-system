@@ -1,14 +1,14 @@
 # Câu hỏi thường gặp
 
-## NPMIS đã có package npm dùng được chưa?
+## Dennis đã có package npm dùng được chưa?
 
 Chưa thể kết luận từ bộ tài liệu hiện tại. Kiểm tra README của package và phiên bản đã phát hành trước khi dùng trong sản phẩm.
 
-## Có thể dùng cho dự án thương mại không?
+## Có thể dùng miễn phí hoặc cho dự án thương mại không?
 
-Chỉ khi license của phiên bản cụ thể đã được chọn và công bố. Hiện trạng license trong repo là chưa quyết định; không suy diễn từ mục tiêu dự án.
+Có. Mã nguồn được phát hành theo MIT License, cho phép sử dụng, sửa đổi và phân phối miễn phí, kể cả cho mục đích thương mại, với điều kiện giữ thông báo bản quyền và giấy phép. Xem [LICENSE.md](LICENSE.md) để biết đầy đủ điều khoản.
 
-## NPMIS hỗ trợ framework nào?
+## Dennis hỗ trợ framework nào?
 
 Chưa chốt. V1 cần chọn framework mục tiêu dựa trên nhóm người dùng và năng lực bảo trì; xem [phạm vi sản phẩm](docs/product/platform-scope.md).
 

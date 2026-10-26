@@ -2,7 +2,7 @@
 
 | Ưu tiên | Hạng mục | Điều kiện hoàn tất |
 | --- | --- | --- |
-| P0 | Chốt tên, namespace npm, framework và license | ADR được chấp thuận, kiểm tra tên thực hiện |
+| P0 | Chốt namespace npm và framework | ADR được chấp thuận, kiểm tra tên thực hiện |
 | P0 | Khởi tạo CI và quy tắc bảo vệ nhánh | PR chạy lint/typecheck/test/build |
 | P1 | Token màu, typography, spacing và radius | API token, theme mặc định và ví dụ được công bố |
 | P1 | Button, input, checkbox, radio, switch | Keyboard, disabled/error, test và docs hoàn chỉnh |

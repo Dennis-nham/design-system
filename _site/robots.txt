@@ -1,1 +1,1 @@
-Sitemap: http://0.0.0.0:4000/design-system/sitemap.xml
+Sitemap: https://dennis-nham.github.io/design-system/sitemap.xml

@@ -9,7 +9,7 @@
 
 ## Bộ màu tham chiếu ban đầu
 
-Các giá trị dưới đây gợi tinh thần màu hệ thống iOS 16, chỉ là điểm xuất phát độc lập cho theme NPMIS, không phải bảng màu chính thức của Apple. Hãy kiểm tra contrast và điều chỉnh theo brand trước khi ổn định token.
+Các giá trị dưới đây gợi tinh thần màu hệ thống iOS 16, chỉ là điểm xuất phát độc lập cho theme Dennis, không phải bảng màu chính thức của Apple. Hãy kiểm tra contrast và điều chỉnh theo brand trước khi ổn định token.
 
 | Token semantic | Giá trị tham chiếu | Dùng cho |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 ## Giai đoạn nền tảng
 
-- Chốt phạm vi v1, framework mục tiêu, license và quy trình quản trị.
+- Chốt phạm vi v1, framework mục tiêu và quy trình quản trị; license MIT đã được công bố.
 - Xây dựng token nền tảng, component ưu tiên và một ứng dụng tài liệu có ví dụ chạy được.
 - Phát hành package thử nghiệm qua npm với kiểm thử, changelog và hướng dẫn nâng cấp.
 

@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp của NPMIS.">
+    <meta name="description" content="Tài liệu design system, UI kit và hướng dẫn đóng góp cho cộng đồng của Dennis-nham.">
     <meta name="theme-color" content="#f2f2f7">
-    <title>NPMIS Design System</title>
+    <title>Dennis Design System</title>
     <link rel="stylesheet" href="/design-system/assets/css/style.css">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="/design-system/" aria-label="NPMIS Design System, trang chủ">
-          <span class="brand-mark" aria-hidden="true">N</span>
-          <span class="brand-name">NPMIS <span>Design System</span></span>
+        <a class="brand" href="/design-system/" aria-label="Dennis Design System, trang chủ">
+          <span class="brand-mark" aria-hidden="true">D</span>
+          <span class="brand-name">Dennis <span>Design System</span></span>
         </a>
         <nav class="site-nav" aria-label="Điều hướng chính">
           <a href="/design-system/">Tổng quan</a>
@@ -30,10 +30,10 @@
 <h2 id="cấu-trúc-gợi-ý">Cấu trúc gợi ý</h2>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">@npmis/tokens</code>: token nguồn, CSS variables và định dạng build.</li>
-  <li><code class="language-plaintext highlighter-rouge">@npmis/ui</code>: component web và styles (tên minh họa, cần kiểm tra namespace npm).</li>
-  <li><code class="language-plaintext highlighter-rouge">@npmis/icons</code>: chỉ tách khi nguồn icon, license và nhu cầu tree-shaking đã rõ.</li>
-  <li><code class="language-plaintext highlighter-rouge">@npmis/docs</code>: ứng dụng tài liệu; không nhất thiết phát hành lên npm.</li>
+  <li><code class="language-plaintext highlighter-rouge">@dennis-nham/tokens</code>: token nguồn, CSS variables và định dạng build (tên minh họa).</li>
+  <li><code class="language-plaintext highlighter-rouge">@dennis-nham/ui</code>: component web và styles (tên minh họa, cần kiểm tra namespace npm).</li>
+  <li><code class="language-plaintext highlighter-rouge">@dennis-nham/icons</code>: chỉ tách khi nguồn icon, license và nhu cầu tree-shaking đã rõ (tên minh họa).</li>
+  <li><code class="language-plaintext highlighter-rouge">@dennis-nham/docs</code>: ứng dụng tài liệu; không nhất thiết phát hành lên npm (tên minh họa).</li>
 </ul>
 
 <p>Bắt đầu bằng ít package nhất có thể. Nếu một package UI và tokens đủ, không tách package để tạo cấu trúc hình thức.</p>
@@ -45,7 +45,7 @@
   <li>Khai báo rõ <code class="language-plaintext highlighter-rouge">exports</code>, <code class="language-plaintext highlighter-rouge">types</code>, module format, CSS entry và peer dependencies.</li>
   <li>Không yêu cầu người dùng cài dependency build-time không cần thiết.</li>
   <li>Kiểm thử package đã đóng gói bằng consumer fixture trước publish.</li>
-  <li>Đặt tên scope sau khi xác nhận quyền sở hữu tổ chức npm và tránh xung đột tên.</li>
+  <li>License dự án là MIT; đặt tên scope npm sau khi xác nhận quyền sở hữu và tránh xung đột tên.</li>
 </ul>
 
 <h2 id="chính-sách-tương-thích">Chính sách tương thích</h2>
@@ -54,7 +54,7 @@
 
     </main>
     <footer class="site-footer">
-      <span>NPMIS Design System</span>
+      <span>Dennis Design System</span>
       <a href="/design-system/CONTRIBUTING/">Đóng góp</a>
       <a href="/design-system/COPYRIGHT/">Bản quyền</a>
     </footer>

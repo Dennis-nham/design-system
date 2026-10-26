@@ -6,7 +6,7 @@ Nêu hành vi quan sát được và hành vi mong đợi.
 
 ## Môi trường
 
-- NPMIS/package version:
+- Dennis/package version:
 - Framework/runtime:
 - Browser và hệ điều hành:
 - Accessibility technology nếu liên quan:

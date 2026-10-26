@@ -2,10 +2,10 @@
 
 ## Thông tin dự án hiện tại
 
-- Tên dự án: NPMIS Design System (tên làm việc, cần kiểm tra khả năng sử dụng và đăng ký nhãn hiệu riêng).
-- Người khởi xướng/tác giả được dự án ghi nhận: Dennis Nhâm (`@dennis nham`, theo thông tin do người khởi xướng cung cấp).
-- Năm bắt đầu: cần xác nhận khi phát hành tác phẩm cụ thể.
-- Tác giả của từng phần: ghi nhận trong lịch sử Git, metadata và hồ sơ đóng góp; không mặc nhiên gán mọi phần cho một người.
+- Tên dự án: Dennis Design System.
+- Tác giả và chủ thể cấp phép dự án: Dennis-nham.
+- Giấy phép: MIT License; xem [LICENSE.md](LICENSE.md) để biết đầy đủ điều khoản.
+- Tác giả của từng phần đóng góp được ghi nhận trong lịch sử Git và hồ sơ đóng góp.
 
 ## Bảo toàn chứng cứ
 

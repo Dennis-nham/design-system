@@ -15,4 +15,4 @@ Marketplace, cloud hosting, AI UI builder, backend service, ứng dụng mobile 
 
 ## Quyết định cần chốt
 
-Framework, browser support, cách quản lý theme, CSS strategy, định dạng package, license, versioning và chính sách hỗ trợ. Không tạo cam kết tương thích trước khi các quyết định này có owner và ADR.
+Framework, browser support, cách quản lý theme, CSS strategy, định dạng package, versioning và chính sách hỗ trợ; license MIT đã được chọn. Không tạo cam kết tương thích trước khi các quyết định này có owner và ADR.

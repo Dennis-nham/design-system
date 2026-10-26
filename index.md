@@ -1,11 +1,11 @@
 ---
 layout: default
-title: NPMIS Design System
+title: Dennis Design System
 ---
 
 <p class="eyebrow">Tài liệu dự án · Bản khởi đầu</p>
 
-# NPMIS Design System
+# Dennis Design System
 
 <p class="page-lead">Nền tảng thiết kế và UI kit có thể tái sử dụng, được xây dựng quanh tokens, accessibility và API minh bạch.</p>
 
@@ -41,5 +41,5 @@ title: NPMIS Design System
 
 <aside class="status-note" aria-label="Trạng thái dự án">
 	<span class="status-dot" aria-hidden="true"></span>
-	<p><strong>Đang định hình nền tảng.</strong> Framework, license và API vẫn cần được xác nhận trước khi phát hành package ổn định. Xem <a href="{{ '/docs/roadmap/backlog/' | relative_url }}">backlog</a> để biết các quyết định tiếp theo.</p>
+	<p><strong>Đang định hình nền tảng.</strong> Giấy phép mã nguồn mở MIT đã được công bố; framework và API vẫn cần được xác nhận trước khi phát hành package ổn định. Xem <a href="{{ '/docs/roadmap/backlog/' | relative_url }}">backlog</a> để biết các quyết định tiếp theo.</p>
 </aside>

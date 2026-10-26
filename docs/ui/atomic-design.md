@@ -1,4 +1,4 @@
-# Atomic Design trong NPMIS
+# Atomic Design trong Dennis
 
 Atomic Design là cách phân loại độ phức tạp, không phải yêu cầu mọi component phải ghép cứng theo một sơ đồ.
 
